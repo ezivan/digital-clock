@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Audiowide';
+  src: url('./ass/Audiowide-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --green-color: #AFFA2F;
+  --disabled-color: #0F160B;
+  --dark-color: #0707079c;
+  --font-family: 'Audiowide', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: var(--font-family);
+  color: var(--green-color);
+  background: linear-gradient(to right, #000000df, #000000df), url(./cat-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Utilities  */
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.disabled {
+  color: var(--disabled-color);
+}
+
+.mx-1 {
+  margin-right: .3rem;
+}
+
+/* Site Style */
+
+.clock {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  background-color: var(--dark-color);
+}
+
+.clock-data-time-container {
+  width: 100%;
+  font-size: 4rem;
+  justify-content: center;
+  gap: .5rem;
+  align-items: center;
+}
+
+.clock-other-data {
+  font-size: 2rem;
+}
+
+.days-container {
+  width: 100%;
+  max-width: 300px;
+  justify-content: space-evenly;
+  font-size: .7rem;
+}
+
+.logotype {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  opacity: .1;
+}
+
+.meridiem-time {
+  gap: .5rem;
+  font-size: 1.1rem;
+}
