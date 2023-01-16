@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock | EZivan</title>
+  <meta name="description" content="Reloj Digital">
+  <meta property="og:type" content="website">
+  <meta property="twitter:card" content="summary">
+  <meta name="twitter:title" property="og:title" content="Digital">
+  <meta name="twitter:description" property="og:description" content="Reloj Digital">
+  <meta property="og:url" content="https://ezivan.github.io/digital-clock">
+  <meta property="twitter:url" content="https://ezivan.github.io/digital-clock">
+  <meta property="og:image" content="https://ezivan.github.io/digital-clock/assets/og-image.jpg">
+  <meta property="twitter:image" content="https://ezivan.github.io/digital-clock/assets/twitter-img.jpg">
+  <link rel="canonical" href="https://ezivan.github.io/digital-clock">
+  <link rel="shortcut icon" href="https://ezivan.github.io/digital-clock/assets/favicon.svg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="https://ezivan.github.io/digital-clock/assets/favicon.svg">
+  <link rel="stylesheet" href="https://ezivan.github.io/digital-clock/assets/style.css">
+</head>
+
+<body id="particles-js">
+  <a href="https://vincentgarreau.com/particles.js/" target="_blank"
+    rel="noopener"><small>https://vincentgarreau.com/particles.js/</small></a>
+  <img src="assets/logotype-dark.svg" alt="EZivan" class="logotype">
+  <div class="container">
+    <main class="d-flex-col clock">
+      <div class="d-flex  -time-container">
+        <p id="hours">12</p>
+        <p>:</p>
+        <p id="minutes">30</p>
+        <div class="d-flex-col clock-other-data">
+          <div class="d-flex meridiem-time">
+            <p class="disabled" id="am">AM</p>
+            <p class="disabled" id="pm">PM</p>
+          </div>
+          <div class="d-flex">
+            <p class="mx-1">:</p>
+            <p id="seconds">33</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex days-container">
+        <p class="disabled">SUN</p>
+        <p class="disabled">MON</p>
+        <p class="disabled">TUE</p>
+        <p class="disabled">WED</p>
+        <p class="disabled">THU</p>
+        <p class="disabled">FRI</p>
+        <p class="disabled">SAT</p>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+
+</html>
